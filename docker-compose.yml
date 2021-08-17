@@ -17,17 +17,17 @@ services:
     network_mode: "sample-network5"
   
   # .NET5
-  dotnet:
-    container_name: dotnet
-    build:
-      context: ./docker/dotnet/src
-      dockerfile: NewSampleAPI2/Dockerfile
-    tty: true
-    volumes:
-      - ./docker/dotnet/src:/src
-    ports:
-      - "5001:80"
-    network_mode: "sample-network5"
+#  dotnet:
+#    container_name: dotnet
+#    build:
+#      context: ./docker/dotnet/src
+#      dockerfile: NewSampleAPI2/Dockerfile
+#    tty: true
+#    volumes:
+#      - ./docker/dotnet/src:/src
+#    ports:
+#      - "5001:80"
+#    network_mode: "sample-network5"
 
   # MySQL
   db:
